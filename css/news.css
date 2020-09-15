@@ -13,6 +13,7 @@ body{font-family:'Roboto','Noto Sans KR';}
 header{
   background:url('../images/news-bg.jpg') no-repeat center;
   background-size:cover;
+  padding-bottom:20px;
 }
 .container{
   max-width:960px;
@@ -30,3 +31,19 @@ header>.container{
 nav li{float:left;margin-left:40px;}
 nav a{font-size:18px;text-transform:uppercase;color:#333333;}
 nav a:hover{color:#999999;}
+
+h1{text-align:center;font-size:6rem;color:#443322;text-transform: capitalize;}
+
+
+/* 640px 이하 */
+@media(max-width:640px){
+  header>.container{
+    height:200px;
+    grid-template-columns:auto;
+    grid-template-rows:100px auto;
+    justify-content:center;
+    align-items:initial;
+    align-content:center;
+  }
+  h1{font-size:4rem;}
+}
