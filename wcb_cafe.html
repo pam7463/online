@@ -9,34 +9,53 @@
   <!-- css reset -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <style>
-
+    html{font-size:14px;}
+    a{color:black;text-decoration:none;}
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Ramaraja&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     body{font-family:'Roboto','Noto Sans KR';}
     .eng{font-family:'Ramaraja';}    
+    .wrap{
+      width:100vw;
+      height:100vh;
+      background-image:url('./images/main-bg.jpg'),linear-gradient(0deg,#ff0000,#00ff00);
+      background-blend-mode:hard-light;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size:cover;
+    }
+    .container{
+      max-width:1200px;
+      margin:0 auto;      
+    }
+    header{
+      
+    }
 
   </style>
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <div class="logo">
-        <a href="#">
-          <img src="./images/logo.svg" alt="wcb cafe logo">
-        </a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">news</a></li>
-          <li><a href="#">menu</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <h1 class="eng">we'll make your day</h1>
-      <h2>멋진 카페에서 힐링 시간을 가지세요. 첨가물을 넣지 않은 재료로 건강한 음식을 만듭니다.</h2>
-      <input type="button" value="메뉴보기">
-    </section>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="#">
+            <img src="./images/logo.svg" alt="wcb cafe logo">
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">news</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <h1 class="eng">we'll make your day</h1>
+        <h2>멋진 카페에서 힐링 시간을 가지세요. 첨가물을 넣지 않은 재료로 건강한 음식을 만듭니다.</h2>
+        <input type="button" value="메뉴보기">
+      </section>
+    </div>
   </div>
 </body>
 </html>
