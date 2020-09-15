@@ -48,3 +48,32 @@ h1{margin-bottom:40px;text-align:center;font-weight:bold;font-size:6rem;color:#4
 h2{margin-bottom:30px;text-align:center;font-weight:bold;font-size:1.2rem;color:#333333;}
 input{padding:10px 20px;font-size:2rem;color:#333333;cursor:pointer;}
 input:hover{background-color:#333333;color:#ffffff;}
+
+
+
+/* 640이하 */
+@media(max-width:640px){
+  header{
+    /* padding:20px 0; */
+    /* background-color:red; */
+    /* display:grid; */
+    height:260px;
+    grid-template-columns:auto;
+    grid-template-rows:100px 100px;
+    justify-content:center;
+    align-items:initial;
+    align-content:center;
+  }
+  section{
+    margin-top:60px;   
+  }
+  h1{
+    margin-bottom:20px;
+    font-size:3rem;
+  }
+  h2{
+    line-height:2rem;
+  }
+  input{font-size:1.4rem;}
+
+}
