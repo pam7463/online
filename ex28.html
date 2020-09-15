@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃</title>
+
+  <style>
+    /* .wrap{border:1px solid red;padding:10px;text-align:center;}
+    .item{display:inline-block;border:1px solid black;}
+    .item:nth-child(1){float:left;}
+    .item:nth-child(2){}
+    .item:nth-child(3){float:right;} */
+
+    /* .wrap{
+      height:300px;
+      border:1px solid red;
+      padding:10px;
+      display:flex;
+      flex-flow:row-reverse nowrap;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .item{height:60px;border:1px solid black;}
+    .item:nth-child(1){flex:1 1 200px;}
+    .item:nth-child(2){flex:1 1 400px;}
+    .item:nth-child(3){flex:1 1 200px;} */
+
+    .wrap{
+      width:600px;
+      height:600px;
+      margin:0 auto;
+      border:1px solid red;
+      padding:10px;
+      display:grid;
+      grid-template-columns:repeat(4,auto);
+      grid-template-rows:repeat(3,auto);
+      /* grid-template:repeat(3,150px) / repeat(3,150px); */
+      /* grid-template:
+                     "item01 item02 item03 item04" 
+                     "item05 item02 item06 item07" 
+                     "item08 item09 item09 item07"
+      ; */
+      grid-gap:10px;
+            
+
+    }
+    .item{
+      background-size:cover;
+      text-indent:-9999999px;
+      background-repeat:no-repeat;
+      background-position:center;
+    }
+    .item:nth-child(1){
+      background-image:url('./images/img01.jpg');
+      /* grid-area:item01; */
+      order:2;
+    }
+    .item:nth-child(2){
+      background-image:url('./images/img02.jpg');
+      /* grid-area:item02;       */
+      order:3;
+      
+    }
+    .item:nth-child(3){
+      background-image:url('./images/img03.jpg');
+      /* grid-area:item03; */
+      order:4
+    }
+    .item:nth-child(4){
+      background-image:url('./images/img04.jpg');
+      /* grid-area:item04; */
+      order:5;
+    }
+    .item:nth-child(5){
+      background-image:url('./images/img05.jpg');
+      /* grid-area:item05; */
+      order:1;
+    }
+    .item:nth-child(6){
+      background-image:url('./images/img06.jpg');
+      /* grid-area:item06; */
+      order:6;
+    }
+    .item:nth-child(7){
+      background-image:url('./images/img07.jpg');
+      /* grid-area:item07; */
+      order:7;
+    }
+    .item:nth-child(8){
+      background-image:url('./images/img08.jpg');
+      /* grid-area:item08; */
+      order:8;
+    }
+    .item:nth-child(9){
+      background-image:url('./images/img09.jpg');
+      /* grid-area:item09; */
+      order:9;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="wrap">
+    <div class="item">아이템1</div>
+    <div class="item">아이템2</div>
+    <div class="item">아이템3</div> 
+    <div class="item">아이템4</div>
+    <div class="item">아이템5</div>
+    <div class="item">아이템6</div> 
+    <div class="item">아이템7</div>
+    <div class="item">아이템8</div>
+    <div class="item">아이템9</div>      
+  </div>
+</body>
+</html>

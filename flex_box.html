@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>푸드 식탁</title>
+  <style>
+    *{margin:0;border:none;padding:0;}
+    a{color:black;text-decoration:none;}
+    img{vertical-align:top;}
+    ul,ol,li{list-style:none;}
+    .clearfix::after{content:'';display:block;clear:both;}
+
+    /* 기본스타일 */
+    .wrap{width:100%;max-width:1600px;margin:0 auto;}
+    header{background-color:black;}
+    header>h1,footer>p{color:white;text-align:center;padding:16px;}
+
+    section{display:flex;flex-flow:row wrap;}
+    section>.img_box{overflow:hidden;}
+    section>.img_box>img{width:100%;}
+    
+    footer{background-color:#999999;}
+
+    /* 테블릿 스타일 */
+    @media(min-width:768px){
+      section>.img_box{width:50%;height:30vw;}
+      section>.img_box:last-child{width:100%;}
+    }
+
+    /* PC스타일 */
+    @media(min-width:1280px){
+      section>.img_box{width:33.33333333333333%;height:20vw;}
+      section>.img_box:last-child{width:66.66666666666667%;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>푸드 식탁</h1>
+    </header>
+    <section> 
+      <div class="img_box">
+        <img src="./images/food01.jpg" alt="food01">
+      </div>
+      <div class="img_box">
+        <img src="./images/food02.jpg" alt="food02">
+      </div>
+      <div class="img_box">
+        <img src="./images/food03.jpg" alt="food03">
+      </div>
+      <div class="img_box">
+        <img src="./images/food04.jpg" alt="food04">
+      </div>
+      <div class="img_box">
+        <img src="./images/food05.jpg" alt="food05">
+      </div>
+    </section>
+    <footer>
+      <p>Food Table</p>
+    </footer>
+  </div>
+</body>
+</html>

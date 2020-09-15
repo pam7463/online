@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그리드박스(타일구조)</title>
+  <style>
+    h1{font-size:50px;text-align:center;}
+    .grid_box{
+      width:960px;
+      margin:0 auto; 
+      display:grid;
+      grid-template-columns:auto auto auto auto auto auto;
+      grid-template-rows:150px 150px 150px 150px 150px;
+    }
+    .grid_item{
+      background-size:cover;
+    }
+    .grid_item01{
+      background:url('./images/img01.jpg') no-repeat center;
+    }
+    .grid_item02{
+      background:url('./images/img02.jpg') no-repeat center;
+    }
+    .grid_item03{
+      background:url('./images/img03.jpg') no-repeat center;
+    }
+    .grid_item04{
+      background:url('./images/img04.jpg') no-repeat center;
+      grid-area:1/4/3/6;
+      z-index:100;
+    }
+    .grid_item05{
+      background:url('./images/img05.jpg') no-repeat center;
+    }
+    .grid_item06{
+      background:url('./images/img06.jpg') no-repeat center;
+    }
+    .grid_item07{
+      background:url('./images/img07.jpg') no-repeat center;
+    }
+    .grid_item08{
+      background:url('./images/img08.jpg') no-repeat center;
+    }
+    .grid_item09{
+      background:url('./images/img09.jpg') no-repeat center;
+    }
+    .grid_item10{
+      background:url('./images/img10.jpg') no-repeat center;
+      grid-area:3/1/5/3;
+      z-index:10;
+    }
+    .grid_item11{
+      background:url('./images/img11.jpg') no-repeat center;
+    }
+    .grid_item12{
+      background:url('./images/img12.jpg') no-repeat center;
+    }
+    .grid_item13{
+      background:url('./images/img13.jpg') no-repeat center;
+    }
+    .grid_item14{
+      background:url('./images/img14.jpg') no-repeat center;
+    }
+    .grid_item15{
+      background:url('./images/img15.jpg') no-repeat center;
+    }
+    .grid_item16{
+      background:url('./images/img16.jpg') no-repeat center;
+    }
+    .grid_item17{
+      background:url('./images/img17.jpg') no-repeat center;
+    }
+    .grid_item18{
+      background:url('./images/img18.jpg') no-repeat center;
+    }
+    .grid_item19{
+      background:url('./images/img19.jpg') no-repeat center;
+    }
+    .grid_item20{
+      background:url('./images/img20.jpg') no-repeat center;
+      grid-area:2/2/4/5;
+      z-index:50;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>그림들</h1>
+  <div class="grid_box">
+    <div class="grid_item grid_item01"></div>
+    <div class="grid_item grid_item02"></div>
+    <div class="grid_item grid_item03"></div>
+    <div class="grid_item grid_item04"></div>
+    <div class="grid_item grid_item05"></div>
+    <div class="grid_item grid_item06"></div>
+    <div class="grid_item grid_item07"></div>
+    <div class="grid_item grid_item08"></div>
+    <div class="grid_item grid_item09"></div>
+    <div class="grid_item grid_item10"></div>
+    <div class="grid_item grid_item11"></div>
+    <div class="grid_item grid_item12"></div>
+    <div class="grid_item grid_item13"></div>
+    <div class="grid_item grid_item14"></div>
+    <div class="grid_item grid_item15"></div>
+    <div class="grid_item grid_item16"></div>
+    <div class="grid_item grid_item17"></div>
+    <div class="grid_item grid_item18"></div>
+    <div class="grid_item grid_item19"></div>
+    <div class="grid_item grid_item20"></div>
+  </div>
+</body>
+</html>

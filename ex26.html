@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>타일</title>
+  <style>
+    h1{font-size:50px;text-align:center;}
+    .grid_box{
+      width:900px;
+      height:900px;
+      margin:0 auto;
+      background-color:lightcyan;
+
+      display:grid;
+      grid-template: 
+              /*   1열      2열     3열 */
+        /* 1행 */ "img02 img02 img01" 1fr
+        /* 2행 */ "img02 img02 img03" 1fr
+        /* 3행 */ "img04 img05 img06" 1fr /
+                    1fr   1fr   1fr
+      ;
+      grid-gap:10px;
+    }
+    
+    .grid_item01{
+      background:url('./images/back_img.jpg') no-repeat center;
+      background-size:cover;
+      grid-area:img01;
+    }
+    .grid_item02{
+      background:url('./images/food01.jpg') no-repeat center;
+      background-size:cover;
+      grid-area:img02;
+    }
+    .grid_item03{
+      background:url('./images/food02.jpg') no-repeat center;
+      background-size:cover;
+      grid-area:img03;
+    }
+    .grid_item04{
+      background:url('./images/food03.jpg') no-repeat center;
+      background-size:cover;
+      grid-area:img04;
+    }
+    .grid_item05{
+      background:url('./images/food04.jpg') no-repeat center;
+      background-size:cover;
+      grid-area:img05;
+    }
+    .grid_item06{
+      background:url('./images/food05.jpg') no-repeat center;
+      background-size:cover;
+      grid-area:img06;
+    }
+  </style>
+</head>
+<body>
+  <h1>그리드</h1>
+  <div class="grid_box">
+    <div class="grid_item01"></div>
+    <div class="grid_item02"></div>
+    <div class="grid_item03"></div>
+    <div class="grid_item04"></div>
+    <div class="grid_item05"></div>
+    <div class="grid_item06"></div>
+  </div>
+</body>
+</html>

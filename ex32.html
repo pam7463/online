@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그리드박스</title>
+  <style>
+    .grid_container{
+      display:grid;
+      grid-template:
+        "item01 item02    .   item04" 100px
+        "item05    .   item07 item08" 100px
+        "  .    item09 item10 item06" 100px
+        "item11 item12    .   item03" 100px
+        /100px 100px 100px 100px
+      ;
+      grid-gap:10px;
+    }
+    .grid_item{border:1px solid black;text-align:center;line-height:100px;}
+    .grid_item01{
+      grid-area:item01;
+    }
+    .grid_item02{
+      grid-area:item02;
+    }
+    .grid_item03{
+      grid-area:item03;
+    }
+    .grid_item04{
+      grid-area:item04;
+    }
+    .grid_item05{
+      grid-area:item05;
+    }
+    .grid_item06{
+      grid-area:item06;
+    }
+    .grid_item07{
+      grid-area:item07;
+    }
+    .grid_item08{
+      grid-area:item08;
+    }
+    .grid_item09{
+      grid-area:item09;
+    }
+    .grid_item10{
+      grid-area:item10;
+    }
+    .grid_item11{
+      grid-area:item11;
+    }
+    .grid_item12{
+      grid-area:item12;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid_container">
+    <div class="grid_item grid_item01">아이템01</div>
+    <div class="grid_item grid_item02">아이템02</div>
+    <div class="grid_item grid_item03">아이템03</div>
+    <div class="grid_item grid_item04">아이템04</div>
+    <div class="grid_item grid_item05">아이템05</div>
+    <div class="grid_item grid_item06">아이템06</div>
+    <div class="grid_item grid_item07">아이템07</div>
+    <div class="grid_item grid_item08">아이템08</div>
+    <div class="grid_item grid_item09">아이템09</div>
+    <div class="grid_item grid_item10">아이템10</div>
+    <div class="grid_item grid_item11">아이템11</div>
+    <div class="grid_item grid_item12">아이템12</div>
+  </div>
+</body>
+</html>

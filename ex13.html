@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃3</title>
+  <style>
+    *{margin:0;border:none;padding:0;}
+    a{color:black;text-decoration:none;}
+    ul,ol,li{list-style:none;}
+    img{vertical-align:top;}
+    .clearfix::after{
+      content:'';
+      display:block;
+      clear:both;
+    }
+
+
+    .wrap{}
+    .header,.footer{
+      padding:20px 10px;
+      background-color:gray;
+    }
+    .section>.nav{
+      float:left;
+      box-sizing:border-box;
+      width:40%;
+      padding:10px;
+      padding-right:30px;
+    }
+    .section>.nav>ul>li>a{
+      display:inline-block;
+      width:100%;
+      margin:5px auto;
+      padding:5px;
+      background-color:skyblue;
+      color:white;
+    }
+    .section>.nav>ul>li>a:hover{
+      background-color:lightblue;
+      color:black;
+    }
+    .section>.article{
+      float:right;
+      box-sizing:border-box;
+      width:60%;
+      padding:30px 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <h1>로고</h1>
+    </header>
+    <section class="section clearfix">
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">File</a></li>
+          <li><a href="#">Edit</a></li>
+          <li><a href="#">Option</a></li>
+        </ul>
+      </nav>
+      <article class="article">
+        <h2>부제목</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aspernatur rerum eum facilis aperiam doloribus at fuga veritatis, porro assumenda quae laboriosam? Hic perferendis, veritatis expedita cupiditate quaerat maiores vero.Consequatur minus aut natus at facere aliquam eum modi commodi accusamus minima porro molestiae culpa harum, error cupiditate animi mollitia cum recusandae quos. Error nesciunt dignissimos nisi cupiditate praesentium reiciendis!</p>
+      </article>
+    </section>
+    <footer class="footer">
+      <address class="address">
+        주소
+      </address>
+    </footer>
+  </div>
+</body>
+</html>

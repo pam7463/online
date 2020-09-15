@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>플랙서블 박스</title>
+  <style>
+    .flex_container{
+      display:flex;
+      /* flex-flow:row nowrap; */
+      justify-content:space-between;
+      align-items:flex-start;
+      /* align-content:stretch; */
+      height:200px;
+      background-color:#eeeeee;
+    }
+    .flex_item{
+      width:100px;
+      background-color:dodgerblue;
+      margin:10px;
+    }
+    .flex_item:nth-child(2){
+      height:100px;
+      align-self: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex_container">
+    <div class="flex_item">1</div>
+    <div class="flex_item">2</div>
+    <div class="flex_item">3</div>
+  </div>
+</body>
+</html>

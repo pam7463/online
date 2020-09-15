@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid(그리드)</title>
+  <style>
+    /* 기본스타일 */
+    .grid_container{
+      height:1000px;
+      display:grid;
+      grid-template-columns:1fr 2fr 1fr;
+      grid-template-rows:1fr 2fr 3fr 2fr 1fr;
+      grid-gap:20px;
+      
+
+      background-color:red;
+      border:1px solid black;
+      padding:10px;
+    }
+    .item{
+      background-color:green;
+      border:1px solid black;
+      padding:10px;
+      color:white;
+      font-size:20px;
+      text-align:center;
+    }
+    .item:nth-child(1){
+      grid-row-start:1;
+      grid-row-end:3;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="grid_container">
+    <div class="item">그리드아이템1</div>
+    <div class="item">그리드아이템2</div>
+    <div class="item">그리드아이템3</div>
+    <div class="item">그리드아이템4</div>
+    <div class="item">그리드아이템5</div>
+    <div class="item">그리드아이템6</div>
+    <div class="item">그리드아이템7</div>
+    <div class="item">그리드아이템8</div>
+    <div class="item">그리드아이템9</div>
+    <div class="item">그리드아이템10</div>
+    <div class="item">그리드아이템11</div>
+    <div class="item">그리드아이템12</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>플랙서블박스</title>
+  <style>
+    .flex_container{
+      height:300px;
+      border:1px solid red;
+      display:flex;
+      flex-flow:row wrap;
+      justify-content: space-between;
+      /* align-items:stretch; */
+      align-content:space-between;
+    }
+    .item{
+      background-color:blue;
+      color:white;
+      margin:5px;
+    }
+    .item:nth-child(1){
+      order:5;
+    }
+    .item:nth-child(2){
+      order:2;
+    }
+    .item:nth-child(3){
+      order:1;
+    }
+    .item:nth-child(4){
+      order:10;
+    }
+    .item:nth-child(5){
+      order:9;
+    }
+    .item:nth-child(6){
+      order:8;
+    }
+    .item:nth-child(7){
+      order:3;
+    }
+    .item:nth-child(8){
+      order:4;
+    }
+    .item:nth-child(9){
+      order:7;
+    }
+    .item:nth-child(10){
+      order:6;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex_container">
+    <div class="item">아이템1</div>
+    <div class="item">아이템2</div>
+    <div class="item">아이템3</div>
+    <div class="item">아이템4</div>
+    <div class="item">아이템5</div>
+    <div class="item">아이템6</div>
+    <div class="item">아이템7</div>
+    <div class="item">아이템8</div>
+    <div class="item">아이템9</div>
+    <div class="item">아이템10</div>
+  </div>
+</body>
+</html>

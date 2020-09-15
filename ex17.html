@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>플랙서블 박스의 비율</title>
+  <style>
+    .flex_box{
+      display:flex;
+      flex-flow:row nowrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      background-color:#dddddd;
+
+    }
+    .flex_item{
+      background-color:dodgerblue;
+      width:300px;
+      margin:10px;
+    }
+    .flex_item:nth-child(1){
+      flex:1 1 auto;
+    }
+    .flex_item:nth-child(2){
+      flex:1 1 auto;
+    }
+    .flex_item:nth-child(3){
+      flex:1 1 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex_box">
+    <div class="flex_item">1</div>
+    <div class="flex_item">2</div>
+    <div class="flex_item">3</div>
+  </div>
+</body>
+</html>

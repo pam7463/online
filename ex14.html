@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃4(flexbox)</title>
+  <style>
+    .flex_container{
+      width:90%;
+      height:120px;
+      margin:0 auto;
+      border:2px solid blue;
+      display:flex;
+      /* flex-direction:row; */
+      /* flex-wrap:nowrap; */
+      flex-flow:row nowrap;
+      justify-content:space-evenly;
+      align-items:baseline;
+    }
+    .item{
+      width:30px;
+      height:30px;
+      background-color:lightblue;
+    }
+    .item:nth-child(1){
+      font-size:20px;
+    }
+    .item:nth-child(2){
+      font-size:50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex_container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+  </div>
+</body>
+</html>

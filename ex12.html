@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상선택자2</title>
+  <style>
+    ul{
+      list-style-type:none;
+      margin:0;
+      padding:0;
+      background-color:cyan;
+    }
+    ul::after{
+      content:'';
+      display:block;
+      clear:both;
+    }
+    ul>li{
+      float:left;
+      padding:10px 20px;
+      background-color:yellow;
+    }
+    ul>li:nth-child(1){
+      background-color:tomato;
+    }
+    ul>li.hover_box:hover{
+      background-color:violet;
+    }
+    ul>li>a:link{
+      color:red;
+      text-decoration:none;
+    }
+    ul>li>a:visited{
+      color:blue;      
+    }
+    ul>li>a:hover{
+      color:green;
+    }
+    ul>li>a:active{
+      color:cyan;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">link</a></li>
+    <li class="hover_box"><a href="#">visited</a></li>
+    <li class="hover_box"><a href="#">hover</a></li>
+    <li class="hover_box"><a href="#">active</a></li>
+  </ul>
+</body>
+</html>

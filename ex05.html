@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>border</title>
+  <style>
+    .box{
+      width:0;
+      height:0;
+      border:100px solid black;
+      border-left:50px solid transparent;
+      border-right:50px solid transparent;
+      border-bottom-color:transparent;
+
+      position:absolute;
+      left: 755px;
+      top: 307px;
+    }
+    .box02{
+      box-sizing:border-box;
+      width:1000px;
+      height:300px;
+      margin:0 auto;
+      border:1px solid gray;
+      border-radius:50px;
+      padding:20px;
+      background-color:black;
+
+      font-size:2em;
+      text-align:center;
+      color:white;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <div class="box02">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis reprehenderit impedit tempora repellendus possimus commodi nihil, consectetur velit dicta! Velit labore sit deleniti distinctio quod quasi temporibus quidem eos?
+  </div>
+</body>
+</html>

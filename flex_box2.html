@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>푸드 식탁</title>
+  <style>
+    *{margin:0;border:none;padding:0;}
+    a{color:black;text-decoration:none;}
+    img{vertical-align:top;}
+    ul,ol,li{list-style:none;}
+    .clearfix::after{content:'';display:block;clear:both;}
+    /* 기본스타일 */
+    .wrap{width:100%;max-width:1600px;margin:0 auto;}
+    header{background-color:black;}
+    header>h1,footer>p{color:white;text-align:center;padding:16px;}
+    section{display:flex;flex-flow:row wrap;justify-content:space-between;}
+    section>.img_box{
+      width:100%;
+      height:400px;
+      margin-bottom:10px;      
+    }        
+    section>.img_box:nth-child(1){
+      background:url('./images/food01.jpg') no-repeat center;
+      background-size:cover;
+    }
+    section>.img_box:nth-child(2){
+      background:url('./images/food02.jpg') no-repeat center;
+      background-size:cover;
+    }
+    section>.img_box:nth-child(3){
+      background:url('./images/food03.jpg') no-repeat center;
+      background-size:cover;
+    }
+    section>.img_box:nth-child(4){
+      background:url('./images/food04.jpg') no-repeat center;
+      background-size:cover;
+    }
+    section>.img_box:nth-child(5){
+      background:url('./images/food05.jpg') no-repeat center;
+      background-size:cover;
+    }
+    footer{background-color:#999999;}
+
+    /* 테블릿 스타일 */
+    @media(min-width:768px){      
+      section>.img_box{
+        width:49.5%;  
+      }
+      section>.img_box:nth-child(5){
+        width:100%;
+      }
+    }
+
+    /* PC스타일 */
+    @media(min-width:1280px){
+      section>.img_box{
+        width:33%;  
+      }
+      section>.img_box:nth-child(5){
+        width:66.66666666666667%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>푸드 식탁</h1>
+    </header>
+    <section> 
+      <div class="img_box"></div>
+      <div class="img_box"></div>
+      <div class="img_box"></div>
+      <div class="img_box"></div>
+      <div class="img_box"></div>
+    </section>
+    <footer>
+      <p>Food Table</p>
+    </footer>
+  </div>
+</body>
+</html>

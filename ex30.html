@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>색상(color)</title>
+  <style>
+    h1{text-align:center;}
+    p{
+      width:200px;
+      margin:10px auto;
+      border:1px solid black;
+      padding:10px;
+      font-size:2em;
+      text-align:center;
+    }
+    .color01{
+      color:red;
+      background-image:linear-gradient(135deg,green,blue,yellow)
+    }
+    .color02{
+      color:#942;
+      background-image:linear-gradient(90deg,#00ff00,blue,rgb(255,255,0));
+    }
+    .color03{
+      color:rgb(255,0,255);
+      background-image:linear-gradient(270deg,green, blue 80%, yellow);
+    }
+    .color04{
+      width:300px;
+      height:200px;
+      border:none;
+      border-radius:150px;
+      padding:0;
+      color:hsla(0,100%,50%,1);
+      background-image:radial-gradient(red 0%,green 40%,blue 80%,rgba(0,0,255,0));
+    }
+    .color05{
+      color:rgba(255,0,0,0.5);
+      background-color:blue;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>타이틀</h1>
+  <p class="color01">name</p>
+  <p class="color02">hex</p>
+  <p class="color03">rgb</p>
+  <p class="color04">hsl</p>
+  <p class="color05">rgba</p>  
+</body>
+</html>
