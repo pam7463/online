@@ -41,8 +41,16 @@ section>.container{
   justify-content:space-between;
   align-items:flex-start;
 }
+section>.container>article{
+  width:60%;
+}
+section>.container>article img{
+  width:100%;
+}
 
-
+section>.container>aside{
+  width:20%;
+}
 
 /* 640px 이하 */
 @media(max-width:640px){
