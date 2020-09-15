@@ -34,7 +34,7 @@ nav a:hover{color:#999999;}
 
 h1{text-align:center;font-size:6rem;color:#443322;text-transform: capitalize;}
 
-
+section{margin-top:40px;}
 section>.container{
   display:flex;
   flex-flow:row nowrap;
@@ -47,10 +47,33 @@ section>.container>article{
 section>.container>article img{
   width:100%;
 }
-
 section>.container>aside{
   width:20%;
 }
+
+.date_circle{
+  float:left;
+  width:100px;
+  height:100px;
+  border-radius:80px;
+  background:#0bd;
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content:center;
+  align-items: center;
+  color:#ffffff;
+  font-size:16px;
+}
+.month_day{
+  margin-bottom:10px;
+  border-bottom:1px solid #ffffff;
+  padding-bottom:6px;
+  font-size:2rem;
+}
+.art_title{float:right;width:calc(100%-120px);}
+.large_tit>h2{font-size:2rem;}
+.small_tit>p{font-size:1.2rem;}
+
 
 /* 640px 이하 */
 @media(max-width:640px){
@@ -63,4 +86,13 @@ section>.container>aside{
     align-content:center;
   }
   h1{font-size:4rem;}
+
+  .side_banner{display:none;}
+  section>.container{
+    flex-flow:row wrap;
+  }
+  section>.container>article,
+  section>.container>aside{
+    width:100%;
+  }
 }
