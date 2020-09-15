@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+.clearfix::after{
+  content:'';
+  display:none;
+  clear:both;
+}
+html{font-size:14px;}
+a{color:black;text-decoration:none;}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Ramaraja&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{font-family:'Roboto','Noto Sans KR';}
+.eng{font-family:serif;}    
+header{
+  background:url('../images/news-bg.jpg') no-repeat center;
+  background-size:cover;
+}
+.container{
+  max-width:960px;
+  margin:0 auto;
+  padding:0 60px;  
+}
+header>.container{
+  display:grid;
+  grid-template-columns:200px auto;
+  grid-template-rows:100px;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo img{width:100%;}
+nav li{float:left;margin-left:40px;}
+nav a{font-size:18px;text-transform:uppercase;color:#333333;}
+nav a:hover{color:#999999;}
