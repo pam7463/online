@@ -41,6 +41,18 @@ header>p{
 }
 
 section{margin:40px 0;}
+.grid_container{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-gap:20px;
+}
+.grid_item01{
+  grid-area:1/1/3/3;
+}
+
+.grid_container img{width:100%;}
+.grid_item01 img{height:44vw;max-height:490px;}
+
 
 
 footer{height:100px;background-color:#432;}
