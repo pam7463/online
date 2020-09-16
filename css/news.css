@@ -2,7 +2,7 @@
 
 .clearfix::after{
   content:'';
-  display:none;
+  display:block;
   clear:both;
 }
 html{font-size:14px;}
@@ -51,6 +51,7 @@ section>.container>aside{
   width:20%;
 }
 
+.art_header{margin-bottom:20px;}
 .date_circle{
   float:left;
   width:100px;
@@ -70,9 +71,30 @@ section>.container>aside{
   padding-bottom:6px;
   font-size:2rem;
 }
-.art_title{float:right;width:calc(100%-120px);}
-.large_tit>h2{font-size:2rem;}
+.art_title{float:right;width:calc(100% - 120px);padding-top:20px;}
+.large_tit>h2{font-size:2rem;line-height:3.2rem;}
 .small_tit>p{font-size:1.2rem;}
+.art_img{padding:20px 0;}
+.art_txt>p{font-size:1.2rem;line-height:2.1rem;margin:16px 0;}
+
+
+.aside h3{
+  border-bottom:2px solid #0bd;
+  padding-bottom:16px;
+  font-size:1.6rem;
+}
+.aside>.aside_kate{
+  margin-bottom:60px;
+}
+.aside>.aside_kate>ul{}
+.aside>.aside_kate>ul>li{
+  border-bottom:1px solid #ccc;
+  padding:16px 0;
+  font-size:1.2rem;
+}
+.aside>.aside_kate>ul>li>a{}
+
+.aside_store>p{padding:16px 0;font-size:1.2rem;line-height:2.1rem;}
 
 
 /* 640px 이하 */
